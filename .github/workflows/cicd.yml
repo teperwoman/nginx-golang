@@ -69,7 +69,7 @@ jobs:
           context: ./frontend/
           file: ./frontend/Dockerfile
           push: true
-          tags: tftest/backend:${{ github.sha }}
+          tags: tftest/frontend:${{ github.sha }}
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
